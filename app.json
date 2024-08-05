@@ -1,0 +1,31 @@
+{
+    "name": "⋆ Laang UBOT ⋆",
+    "description": "[LaangUBOT] Userbot Hanya Untuk To The Point Aja",
+    "logo": "https://telegra.ph/file/43d490b38cc1199e1706d.jpg",
+    "keywords": ["telegram", "userbot", "LaangUBOT", "pyrogram", "modular", "python"],
+    "repository": "https://github.com/LaangUBOT/LaangUBOT",
+    "env": {
+      "API_ID": {
+        "description": "Dapatkan API KEY di mytelegram » di web my.telegram.org Masukan yg APP ID Telegram",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Dapatkan API Hash di mytelegram » di web my.telegram.org",
+        "required": true
+      },
+      "STRING_1": {
+        "description": "Dapatkan String Session di Grup » https://t.me/ybtraviss » Lalu ketik /get string",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "Silahkan buat bot anda di https://t.me/BotFather dan masukkan Bot Tokennya",
+        "required": true
+      },
+      "LOG_CHAT": {
+        "description": "Buat Group Log Publik Anda dan masukkan https://t.me/MissRose_bot lalu ketik /id",
+        "value": "-100",
+        "required": true
+      }
+    }
+  }
+  
