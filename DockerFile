@@ -1,0 +1,15 @@
+FROM LaangYB/Laang:YB
+
+RUN git clone -b LaangUBOT https://github.com/LaangYB/LaangUBOT  /home/LaangUBOT/ \
+    && chmod 777 /home/LaangUBOT \
+    && mkdir /home/LaangUBOT/bin/
+
+COPY ./config.env ./.env* /home/LaangUBOT/
+
+WORKDIR /home/LaangUBOT
+
+RUN pip3 install --upgrade pip
+
+RUN pip3 install --no-cache-dir -U -r requirements.txt
+
+CMD ["bash","start"]
